@@ -47,15 +47,6 @@ directory but you can install it whereever.
 
 The environment varaible **PATH\_TO\_FX** needs to point to the lib directory of the javafx install.
 
-The file yadpbfx.zip is an export of my Eclipse project.
-The directory YabPb if the home directory of the YadPb program.  Copy this directory to you home directory.
-
-    cp -r YadPb ~/
-
-Also copy the yadpb script in the bin directory to you bin directory.  Use this script to start YadPb.
-
-The directory yadpbfx is the source code to the YadPb program.
-
 
 ![Main S creen](src/images/yadpb-fx.png)
 ![General Screen](src/images/yadpb-fx-gen.png)
