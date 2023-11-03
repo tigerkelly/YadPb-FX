@@ -1,0 +1,3 @@
+ --picture                                      Display picture dialog
+  --size=TYPE                                    Set initial size (fit or orig)
+  --inc=NUMBER                                   Set increment for picture scaling (default - 5)

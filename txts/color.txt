@@ -1,0 +1,9 @@
+  --color                                        Display color selection dialog
+  --color-selection                              Alias for --color
+  --init-color=COLOR                             Set initial color value
+  --gtk-palette                                  Show system palette in color dialog
+  --palette=[FILENAME]                           Set path to palette file. Default - /etc/X11/rgb.txt
+  --expand-palette                               Expand user palette
+  --mode=MODE                                    Set output mode to MODE. Values are hex (default) or rgb
+  --extra                                        Use #rrrrggggbbbb format instead of #rrggbb
+  --alpha                                        Add opacity to output color value

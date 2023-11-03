@@ -1,0 +1,13 @@
+ --scale                                        Display scale dialog
+  --value=VALUE                                  Set initial value
+  --min-value=VALUE                              Set minimum value
+  --max-value=VALUE                              Set maximum value
+  --step=VALUE                                   Set step size
+  --page=VALUE                                   Set paging size
+  --print-partial                                Print partial values
+  --hide-value                                   Hide value
+  --invert                                       Invert direction
+  --inc-buttons                                  Show +/- buttons in scale
+  --mark=NAME:VALUE                              Add mark to scale (may be used multiple times)
+  --inc-buttons                                  Show buttons on edges of a scale for increasing or decreasing scale value.
+   --vertical                                    Show vertical scale.

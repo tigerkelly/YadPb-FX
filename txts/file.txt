@@ -1,0 +1,11 @@
+ --file                                         Display file selection dialog
+  --file-selection                               Alias for --file
+  --directory                                    Activate directory-only selection
+  --save                                         Activate save mode
+  --confirm-overwrite=[TEXT]                     Confirm file selection if filename already exists
+   --file-filter=NAME | PATTERN1 PATTERN2 ...    Sets a filename filter
+  --mime-filter=NAME | MIME1 MIME2 ...           Sets a mime-type filter
+  --image-filter=[NAME]                          Add filter for images
+  --filename=FILENAME                            Set the filename.
+  --separator=STRING                             Specify separator character when returning multiple filenames.
+  --multiple                                     Allow selection of multiple filenames in file selection dialog.

@@ -1,0 +1,8 @@
+  --calendar                                     Display calendar dialog
+  --day=DAY                                      Set the calendar day
+  --month=MONTH                                  Set the calendar month
+  --year=YEAR                                    Set the calendar year
+  --details=FILENAME                             Set the filename with dates details
+  --show-weeks                                   Show week numbers at the left side of calendar
+  --date-format=PATTERN                         Set the format for the returned date. By default is `%x'.
+  --default-date                                 Set default date Year, Month and Day.

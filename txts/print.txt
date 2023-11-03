@@ -1,0 +1,6 @@
+ --print                                        Display printing dialog
+  --type=TYPE                                    Set source type (text, image or raw)
+  --headers                                      Add headers to page
+  --filename=FILENAME                            Set name or path to the source file.
+  --add-preview                                  Add Preview button to the print dialog. This option doesn't work for RAW type.
+  --fontname=FONTNAME                            Set the font for printing text.

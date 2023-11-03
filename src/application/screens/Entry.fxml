@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EntryController">
+   <children>
+      <VBox id="mvbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label text="Entry" textFill="BLUE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnGeneral" mnemonicParsing="false" onAction="#doGeneral" prefWidth="100.0" text="General">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Entry Label:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--entry-label" fx:id="txtEntryLabel" prefHeight="25.0" prefWidth="300.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <Label text="Float Precision:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox id="--float-precision" fx:id="cbPrecision" prefWidth="75.0" style="-fx-font-size: 14px;">
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip></ComboBox>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Entry Text:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--entry-text" fx:id="txtEntryText" prefWidth="300.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Left Icon:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--licon" fx:id="txtLeftIcon" prefWidth="300.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <Button fx:id="btnLeftIcon" mnemonicParsing="false" onAction="#doLeftIcon" text="^">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Left Action:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--licon-action" fx:id="txtLeftAction" prefWidth="300.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Right Icon:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--ricon" fx:id="txtRightIcon" prefWidth="300.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <Button fx:id="btnRightIcon" mnemonicParsing="false" onAction="#doRightIcon" text="^">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Right Action:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--ricon-action" fx:id="txtRightAction" prefWidth="300.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Region prefWidth="100.0" />
+                  <ToggleButton id="--completion" fx:id="btnCompletion" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Completion">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--numeric" fx:id="btnNumeric" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Numeric">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Region prefWidth="100.0" />
+                  <ToggleButton id="--hide-text" fx:id="btnHideText" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Hide text">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--editable" fx:id="btnEditable" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Editable">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnSaveSettings" mnemonicParsing="false" onAction="#doBtnSaveSettings" text="Save Settings">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

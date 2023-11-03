@@ -1,0 +1,6 @@
+--about                                        Show about dialog
+  --version                                      Print version
+  --gtkrc=FILENAME                               Load additional GTK settings from file
+  --hscroll-policy=TYPE                          Set policy for horizontal scrollbars (auto, always, never)
+  --vscroll-policy=TYPE                          Set policy for vertical scrollbars (auto, always, never)
+  --image-path=PATH                              Add path for search icons by name

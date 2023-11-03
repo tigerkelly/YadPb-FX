@@ -1,0 +1,9 @@
+ --notification                                 Display notification
+  --menu=STRING                                  Set initial popup menu
+  --no-middle                                    Disable exit on middle click
+  --hidden                                       Doesn't show icon at startup
+  --icon-size=SIZE                               Set icon size for fully specified icons (default - 16)
+   --command=CMD                                 Set the command running when clicked on the icon.
+    --listen                                     Listen for commands on stdin. See NOTIFICATION section.
+  --separator=STRING                             Set separator character for menu values. Default is |.
+  --item-separator=STRING                        Set separator character for menu items. Default is !.

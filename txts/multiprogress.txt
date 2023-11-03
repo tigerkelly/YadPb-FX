@@ -1,0 +1,7 @@
+ --multi-progress                               Display multi progress bars dialog
+  --bar=LABEL[:TYPE]                             Add the progress bar (norm, rtl, pulse or perm)
+  --watch-bar=NUMBER                             Watch for specific bar for auto close
+  --align=TYPE                                   Set alignment of bar labels (left, center or right)
+  --auto-close                                   Dismiss the dialog when 100% of all bars has been reached
+  --auto-kill                                    Kill parent process if cancel button is pressed
+  --vertical                                     Set vertical orientation of progress bars.

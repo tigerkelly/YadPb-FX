@@ -1,0 +1,16 @@
+ --text-info                                    Display text information dialog
+  --fore=COLOR                                   Use specified color for text
+  --back=COLOR                                   Use specified color for background
+  --wrap                                         Enable text wrapping
+  --justify=TYPE                                 Set justification (left, right, center or fill)
+  --margins=SIZE                                 Set text margins
+  --show-cursor                                  Show cursor in read-only mode
+  --show-uri                                     Make URI clickable
+  --uri-color=COLOR                              Use specified color for links
+   --filename=FILENAME                           Open specified file.
+  --tail                                         Autoscroll to end when new text appears. Works only when text is read from stdin.
+  --lang=LANGUAGE                                Highlight syntax for specified LANGUAGE. This option works only if yad builds with gtksourceview.
+   --theme=THEME                                 Set used theme to THEME. This option works only if yad builds with gtksourceview.
+    --show-cursor                                Show cursor in read-only mode.
+    --fontname=FONTNAME                          Set text font. FONTNAME must be in a Pango font description format.
+     --editable                                  Allow changes to text.

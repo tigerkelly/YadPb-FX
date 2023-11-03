@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ColorController">
+   <children>
+      <VBox id="mvbox" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="lblDialog" text="Color" textFill="BLUE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnGeneral" mnemonicParsing="false" onAction="#doGeneral" prefWidth="100.0" text="General">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Init Color:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ColorPicker id="--init-color" fx:id="cpInitColor" prefWidth="125.0" style="-fx-font-size: 14px;">
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip></ColorPicker>
+                  <ToggleButton id="--gtk-palette" fx:id="btnGtkPalette" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="GTK Palette">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--extra" fx:id="btnExtra" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Extra">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Palette:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--palette" fx:id="txtPalette" prefWidth="400.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <Button fx:id="btnPalette" mnemonicParsing="false" onAction="#doPalette" text="^">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Mode:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox id="--mode" fx:id="cbMode" prefWidth="125.0" style="-fx-font-size: 14px;">
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip></ComboBox>
+                  <ToggleButton id="--expand-palette" fx:id="btnExpand" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Expand">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--alpha" fx:id="btnAlpha" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Alpha">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnSaveSettings" mnemonicParsing="false" onAction="#doBtnSaveSettings" text="Save Settings">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

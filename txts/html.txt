@@ -1,0 +1,8 @@
+ --uri=URI                  Open  specified location. URI can be a filename or internet address.
+ --browser                  Turn on browser mode..
+ --print-uri                Print clicked links to standard output.
+ --mime=MIME                Set mime type of data passed to standard input to MIME. Default is text/html.
+ --encoding=ENCODING        Set encoding of data passed to standard input to ENCODING. Default is UTF-8.
+ --uri-handler=CMD          Set external handler for clicked uri. %s will be replaced by activated uri.
+ --user-agent=STRING        Set user agent string. Default is YAD-Webkit (@VERSION@)
+ --user-style=URI           Set path or uri to custom user styles.

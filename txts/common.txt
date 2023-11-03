@@ -1,0 +1,19 @@
+  --date-format=PATTERN                          Set the format for the returned date
+  --float-precision=NUMBER                       Set presicion of floating numbers (default - 3)
+  --command=CMD                                  Set command handler
+  --listen                                       Listen for data on stdin
+  --separator=SEPARATOR                          Set common separator character
+  --item-separator=SEPARATOR                     Set item separator character
+  --editable                                     Allow changes to text in some cases
+  --tail                                         Autoscroll to end of text
+  --quoted-output                                Quote dialogs output
+  --num-output                                   Output number instead of text for combo-box
+  --fontname=FONTNAME                            Specify font name to use
+  --multiple                                     Allow multiple selection
+  --add-preview                                  Enable preview
+  --show-hidden                                  Show hidden files in file selection dialogs
+  --filename=FILENAME                            Set source filename
+  --vertical                                     Set vertical orientation
+  --key=KEY                                      Identifier of embedded dialogs
+  --complete=TYPE                                Set extended completion for entries (any, all, or regex)
+  --iec-format                                   Use IEC (base 1024) units with for size values

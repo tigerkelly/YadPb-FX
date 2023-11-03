@@ -1,0 +1,6 @@
+ --notebook                                     Display notebook dialog
+  --tab=LABEL                                    Add a tab to notebook
+  --tab-pos=TYPE                                 Set position of a notebook tabs (top, bottom, left or right)
+  --tab-borders=NUMBER                           Set tab borders
+  --active-tab=NUMBER                            Set active tab
+  --key=KEY                                      Set the key of the children.

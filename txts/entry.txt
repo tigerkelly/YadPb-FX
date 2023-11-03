@@ -1,0 +1,12 @@
+  --entry                                        Display text entry or combo-box dialog
+  --entry-label=TEXT                             Set the entry label
+  --entry-text=TEXT                              Set the entry text
+  --hide-text=TEXT                               Hide the entry text
+  --completion                                   Use completion instead of combo-box
+  --numeric                                      Use spin button for text entry
+  --licon=IMAGE                                  Set the left entry icon
+  --licon-action=CMD                             Set the left entry icon action
+  --ricon=IMAGE                                  Set the right entry icon
+  --ricon-action=CMD                             Set the right entry icon actionu
+  --float-precision=NUMBER                       Set precision of floating point numbers.
+  --editable                                     Allow make changes to text in combo-box.

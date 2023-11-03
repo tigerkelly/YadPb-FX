@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HtmlController">
+   <children>
+      <VBox id="mvbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label text="HTML" textFill="BLUE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnGeneral" mnemonicParsing="false" onAction="#doGeneral" text="General">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="75.0" text="URI:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--uri" fx:id="txtUrl" prefWidth="600.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Open  specified location. URI can be a filename or internet address." />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="75.0" text="Encoding:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox id="--encoding" fx:id="cbEncoding" editable="true" prefWidth="175.0" style="-fx-font-size: 14px;">
+                     <tooltip>
+                        <Tooltip text="Set encoding of data passed to standard input to ENCODING." />
+                     </tooltip>
+                  </ComboBox>
+                  <Label text="Uri Handler:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--uri-handler" fx:id="txtUriHandler" prefWidth="343.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text=" Set external handler for clicked uri." />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="75.0" text="User Agent:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--user-agent" fx:id="txtUserAgent" prefWidth="600.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Set user agent string. Default is YAD-Webkit" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="75.0" text="User Style:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--user-style" fx:id="txtUserStyle" prefWidth="600.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Set path or uri to custom user styles.&#10;Path to local file can be an absolute file name or uri with file://  pre‐fix." />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox id="browser" alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="75.0" text="Mime:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--mime" fx:id="txtMime">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <ToggleButton id="--print-uri" fx:id="btnPrintUri" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Print Uri">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Print clicked links to standard output." />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--browser" fx:id="btnBrowser" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Browser">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Turn on browser mode. &#10;In this mode all clicked links will be opened in html widget &#10;and  command  Open  will  be added to context menu." />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnSaveSettings" mnemonicParsing="false" onAction="#doBtnSaveSettings" text="Save Settings">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProgressController">
+   <children>
+      <VBox id="mvbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label text="Progress" textFill="BLUE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnGeneral" mnemonicParsing="false" onAction="#doGeneral" text="General">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Progress Text:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--progress-text" fx:id="txtProgressText" prefWidth="350.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <Label prefWidth="100.0" text="Percentage:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--percentage" fx:id="txtPercentage" prefWidth="50.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <Label text="Log Height:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--log-height" fx:id="txtLogHeight" prefWidth="50.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+                  <Label text="Log Text:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="--enable-log" fx:id="txtLogText">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <ToggleButton id="--rtl" fx:id="btnRightToLeft" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Right To Left">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--auto-close" fx:id="btnAutoClose" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Auto Close">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--auto-kill" fx:id="btnAutoKill" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Auto Kill">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--pulsate" fx:id="btnPulsate" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Pulsate">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <ToggleButton id="--log-on-top" fx:id="btnLogOnTop" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Log On Top">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--log-expanded" fx:id="btnLogExpand" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Log Expand">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton id="--enable-log" fx:id="btnEnableLog" mnemonicParsing="false" onAction="#doToggleButton" prefWidth="150.0" text="Enable Log">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnSaveSettings" mnemonicParsing="false" onAction="#doBtnSaveSettings" text="Save Settings">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

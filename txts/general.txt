@@ -1,0 +1,49 @@
+  --title=TITLE                                  Set the dialog title
+  --window-icon=ICONPATH                         Set the window icon
+  --width=WIDTH                                  Set the window width
+  --height=HEIGHT                                Set the window height
+  --posx=NUMBER                                  Set the X position of a window
+  --posy=NUMBER                                  Set the Y position of a window
+  --geometry=WxH+X+Y                             Set the window geometry
+  --timeout=TIMEOUT                              Set dialog timeout in seconds
+  --timeout-indicator=POS                        Show remaining time indicator (top, bottom, left, right)
+  --text=TEXT                                    Set the dialog text
+  --text-align=TYPE                              Set the dialog text alignment (left, center, right, fill)
+  --image=IMAGE                                  Set the dialog image
+  --image-on-top                                 Show image above main widget
+  --icon-theme=THEME                             Use specified icon theme instead of default
+  --expander=[TEXT]                              Hide main widget with expander
+  --button=NAME:ID                               Add dialog button (may be used multiple times)
+  --no-buttons                                   Don't show buttons
+  --buttons-layout=TYPE                          Set buttons layout type (spread, edge, start, end or center)
+  --no-markup                                    Don't use pango markup language in dialog's text
+  --no-escape                                    Don't close dialog if Escape was pressed
+  --escape-ok                                    Escape acts like OK button
+  --borders=NUMBER                               Set window borders
+  --always-print-result                          Always print result
+  --response=NUMBER                              Set default return code
+  --selectable-labels                            Dialog text can be selected
+  --sticky                                       Set window sticky
+  --fixed                                        Set window unresizable
+  --on-top                                       Place window on top
+  --center                                       Place window on center of screen
+  --mouse                                        Place window at the mouse position
+  --undecorated                                  Set window undecorated
+  --skip-taskbar                                 Don't show window in taskbar
+  --maximized                                    Set window maximized
+  --fullscreen                                   Set window fullscreen
+  --no-focus                                     Don't focus dialog window
+  --close-on-unfocus                             Close window when it sets unfocused
+  --splash                                       Open window as a splashscreen
+  --plug=KEY                                     Special type of dialog for XEMBED
+  --tabnum=NUMBER                                Tab number of this dialog
+  --kill-parent=[SIGNAL]                         Send SIGNAL to parent
+  --print-xid=[FILENAME]                         Print X Window Id to the file/stderr
+  --enable-spell                                 Enable spell checking in textview widgets
+  --spell-lang=LANGUAGE                          Set spell checking language to LANGUAGE.
+  --rest=FILENAME                                Read extra arguments from given file instead of command line.
+  --gtkrc=FILENAME                               Read and parse additional GTK+ settings from given file.
+  --print-xid                                    Print X Window Id of a dialog window to the stderr.
+  --display                                      X Display use.
+  --hscroll-policy=TYPE                          Set the policy type for horizontal scrollbars.
+  --vscroll-policy=TYPE                          Set the policy type for vertical scrollbars.

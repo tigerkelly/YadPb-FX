@@ -1,0 +1,7 @@
+--font                                         Display font selection dialog
+  --font-selection                               Alias for --font
+  --preview=TEXT                                 Set text string for preview
+  --separate-output                              Separate output of font description
+  --separator=STRING                             Set output separator character. Default is `|'.
+  --fontname=FONTNAME                            Set the initial font.
+   --quoted-output                               Output data will be in shell-style quotes.

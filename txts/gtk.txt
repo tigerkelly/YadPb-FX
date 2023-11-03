@@ -1,0 +1,9 @@
+ --class=CLASS                                  Program class as used by the window manager
+  --name=NAME                                    Program name as used by the window manager
+  --display=DISPLAY                              X display to use
+  --gdk-debug=FLAGS                              GDK debugging flags to set
+  --gdk-no-debug=FLAGS                           GDK debugging flags to unset
+  --gtk-module=MODULES                           Load additional GTK modules
+  --g-fatal-warnings                             Make all warnings fatal
+  --gtk-debug=FLAGS                              GTK debugging flags to set
+  --gtk-no-debug=FLAGS                           GTK debugging flags to unset

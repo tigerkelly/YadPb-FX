@@ -1,0 +1,3 @@
+ --paned                                        Display paned dialog
+  --orient=TYPE                                  Set orientation (hor[izontal] or vert[ical])
+  --splitter=POS                                 Set initial splitter position

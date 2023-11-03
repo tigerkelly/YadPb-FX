@@ -1,0 +1,11 @@
+--progress                                     Display progress indication dialog
+  --progress-text=TEXT                           Set progress text
+  --percentage=PERCENTAGE                        Set initial percentage
+  --pulsate                                      Pulsate progress bar
+  --auto-close                                   Dismiss the dialog when 100% has been reached
+  --auto-kill                                    Kill parent process if cancel button is pressed
+  --rtl                                          Right-To-Left progress bar direction
+  --enable-log=[TEXT]                            Show log window
+  --log-expanded                                 Expand log window
+  --log-on-top                                   Place log window above progress bar
+  --log-height                                   Height of log window

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="aPane" prefHeight="175.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="application.NewDialogController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Label text="New Dialog">
+                     <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Label prefWidth="125.0" text="Dialog Name:">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfDialogName" prefWidth="200.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Valid characters are A-Za-z0-9_">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Label prefWidth="125.0" text="Dialog Type:">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbDialogType" prefWidth="200.0" style="-fx-font-size: 14px;" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" spacing="4.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#doBtnSave" prefWidth="125.0" text="Save">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#doBtnCancel" prefWidth="125.0" text="Cancel">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

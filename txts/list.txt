@@ -1,0 +1,36 @@
+--list                                         Display list dialog
+  --column=COLUMN[:TYPE]                         Set the column header (see man page for list of possible types)
+  --checklist                                    Use checkboxes for first column
+  --radiolist                                    Use radioboxes for first column
+  --no-headers                                   Don't show column headers
+  --no-click                                     Disable clickable column headers
+  --no-rules-hint                                Disable rules hints
+  --grid-lines=TYPE                              Set grid lines (hor[izontal], vert[ical] or both)
+  --print-all                                    Print all data from list
+  --editable-cols=LIST                           Set the list of editable columns
+  --wrap-width=NUMBER                            Set the width of a column for start wrapping text
+  --wrap-cols=LIST                               Set the list of wrapped columns
+  --ellipsize=TYPE                               Set ellipsize mode for text columns (none, start, middle or end)
+  --ellipsize-cols=LIST                          Set the list of ellipsized columns
+  --print-column=NUMBER                          Print a specific column. By default or if 0 is specified will be printed all columns
+  --hide-column=NUMBER                           Hide a specific column
+  --expand-column=NUMBER                         Set the column expandable by default. 0 sets all columns expandable
+  --search-column=NUMBER                         Set the quick search column. Default is first column. Set it to 0 for disable searching
+  --tooltip-column=NUMBER                        Set the tooltip column
+  --sep-column=NUMBER                            Set the row separator column
+  --sep-value=TEXT                               Set the row separator value
+  --limit=NUMBER                                 Set the limit of rows in list
+  --dclick-action=CMD                            Set double-click action
+  --select-action=CMD                            Set select action
+  --add-action=CMD                               Set add action
+  --regex-search                                 Use regex in search
+  --no-selection                                 Disable selection
+  --add-on-top                                   Add new records on the top of a list
+  --quoted-output                                Output values will be shell-style quoted.
+  --iec-format                                   Use IEC (base 1024) units with for size values. Suffixes KiB, MiB, GiB.
+  --separator=STRING                             Set output separator characters.
+  --float-precision=NUMBER                       Set precision of floating point numbers.
+   --tail                                        Autoscroll to the end of the list when a new row will be added.
+    --multiple                                   Allow multiple rows to be selected.
+   --editable                                    Allow changes to text.
+   --listen                                      Listen data from stdin even if command-line values was specified.

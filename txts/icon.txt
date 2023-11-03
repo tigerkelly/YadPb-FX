@@ -1,0 +1,11 @@
+ --icons                                        Display icons box dialog
+  --read-dir=DIR                                 Read data from .desktop files in specified directory
+  --compact                                      Use compact (list) view
+  --generic                                      Use GenericName field instead of Name for icon label
+  --item-width                                   Set the width of dialog items
+  --term=PATTERN                                 Use specified pattern for launch command in terminal (default: xterm -e %s)
+  --sort-by-name                                 Sort items by name instead of filename
+  --descend                                      Sort items in descending order
+  --single-click                                 Activate items by single click
+  --monitor                                      Watch fot changes in directory
+   --listen                                      Read data from stdin.

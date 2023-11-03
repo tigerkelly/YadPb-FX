@@ -1,0 +1,15 @@
+ --form                                         Display form dialog
+  --field=LABEL[:TYPE]                           Add field to form (see man page for list of possible types)
+  --align=TYPE                                   Set alignment of filed labels (left, center or right)
+  --columns=NUMBER                               Set number of columns in form
+  --scroll                                       Make form scrollable
+  --output-by-row                                Order output fields by rows
+  --focus-field=NUMBER                           Set focused field
+  --cycle-read                                   Cycled reading of stdin data
+   --item-separator=STRING                       Set separator character for combo-box or scale values. Default is `!'.
+   --separator=STRING                            Set output separator character. Default is `|'.
+   --date-format=PATTERN                         Set the format for the date fields (same as in calendar dialog).
+   --complete=TYPE                               Use specific type for extended completion.
+   --num-output                                  Output index of active element instead of text for combo-box fields.
+   --quoted-output                               Output values will be in shell-style quotes.
+    --float-precision=NUMBER                     Set precision of floating point numbers.

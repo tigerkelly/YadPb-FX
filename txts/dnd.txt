@@ -1,0 +1,4 @@
+  --dnd                                          Display drag-n-drop box
+  --tooltip                                      Use dialog text as tooltip
+  --exit-on-drop=NUMBER                          Exit after NUMBER of drops
+  --command=CMD                                  Run command when data received.
