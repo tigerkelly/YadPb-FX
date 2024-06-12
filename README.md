@@ -17,7 +17,7 @@ This is a GUI frontend for the YAD program.  Allow you to create a project(s) to
 
 I used the version of YAD that comes with Ubuntu
 
-Once a project has been created the use can start be adding different dialogs to the project.
+Once a project has been created the user can start by adding different dialogs to the project.
 
 Each dialog has its own set of command line options, plus the general options that go with each dialog.
 
